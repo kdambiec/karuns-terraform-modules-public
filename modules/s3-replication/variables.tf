@@ -22,8 +22,8 @@ variable "destination_bucket_arn" {
   type        = string
 }
 
-variable "bucket_id" {
-  description = "Bucket ID"
+variable "source_bucket_id" {
+  description = "Source Bucket ID"
   type        = string
 }
 
