@@ -12,7 +12,27 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-variable "bucket_name" {
-  description = "The name of the bucket for storing S3 Access Logs"
+variable "source_bucket_arn" {
+  description = "Source Bucket ARN"
+  type        = string
+}
+
+variable "destination_bucket_arn" {
+  description = "Destination Bucket ARN"
+  type        = string
+}
+
+variable "bucket_id" {
+  description = "Bucket ID"
+  type        = string
+}
+
+variable "delete_marker_replication_enabled" {
+  description = "Delete Marker Replication Enabled"
+  type        = string
+}
+
+variable "destination_storage_class" {
+  description = "Destination Storage Class"
   type        = string
 }
