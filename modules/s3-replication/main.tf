@@ -93,9 +93,6 @@ resource "aws_s3_bucket_replication_configuration" "replication" {
       status = var.delete_marker_replication_enabled ? "Enabled" : "Disabled"
     }
     destination {
-      access_control_translation {
-        owner = "Destination"
-      }
       bucket        = var.destination_bucket_arn
       storage_class = var.destination_storage_class
     }
